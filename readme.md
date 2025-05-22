@@ -47,28 +47,7 @@ This project uses web scraping and machine learning to cluster job listings base
 - Model saved: `job_cluster_model.pkl`
 - Vectorizer saved: `skill_vectorizer.pkl`
 
-## Example: Predict New Job Cluster
 
-```python
-new_job = ["Looking for an experienced backend developer with Python, Flask, and PostgreSQL"]
-new_vec = vectorizer.transform(new_job)
-predicted_cluster = kmeans.predict(new_vec)[0]
-print(f"Predicted Cluster: {predicted_cluster}")
-```
-
-## Output Files
-
-| File Name                | Description                            |
-|--------------------------|----------------------------------------|
-| clustered_job_postings.csv | Final job listings with cluster labels |
-| job_cluster_model.pkl     | Trained KMeans model                |
-| skill_vectorizer.pkl      | TF-IDF Vectorizer                   |
-
-## Future Improvements
-
-- Automate alerts via email or Slack
-- Use DBSCAN or HDBSCAN for better cluster shapes
-- Deploy as a web app (Streamlit/Flask)
 
 ## Author
 
