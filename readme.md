@@ -46,6 +46,9 @@ This project uses web scraping and machine learning to cluster job listings base
 - Cluster prediction for new jobs
 - Model saved: `job_cluster_model.pkl`
 - Vectorizer saved: `skill_vectorizer.pkl`
+- 
+open streamlit app
+- https://lustering-job-descriptions-k-mean.streamlit.app/
 
 
 
